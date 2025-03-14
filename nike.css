@@ -1,0 +1,296 @@
+body{
+    background-color: #F5F5F5;
+    height: 5000px;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.content_box{
+    margin: 0 auto;
+    width: 90%;
+    /* height: 100%; */
+    background-color: white;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    /* background-color: green; */
+}
+
+.t_nav_box{
+    width: 100%;
+    height: 30px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a_box{
+    height: 100%;
+    width: 10%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+}
+
+.jordan{
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    background: url('./img/jordan.png') no-repeat center / contain;
+    cursor: pointer;
+}
+
+.converse{
+    width: 50%;
+    height: 50%;
+    background: url('./img/converse.png')no-repeat center / contain;
+    cursor: pointer;
+}
+
+.t_nav{
+    display: flex;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.t_nav div{
+    border-right: 1px solid black;
+    line-height: 13px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.t_nav div:hover{
+    color: gray;
+}
+
+.t_nav_second{
+    position: relative;
+}
+
+.t_nav_ul{
+    position: absolute;
+    background-color: white;
+    width: 170px;
+    right: 0px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 99;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+.t_nav_second:hover .t_nav_ul{
+    /* transform: translateY(5px); */
+    display: block;
+   
+}
+
+.t_nav_li{
+    margin: 10px 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.last_div{
+    border-right: none;
+}
+
+.t_nav_li:hover{
+    color: black;
+}
+
+.top_banner_cover{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+}
+
+.top_banner{
+    height: 70px;
+    width: 100%;
+    /* background-color: white; */
+    position: relative;
+    display: flex;
+}
+
+.nike_logo{
+    position: absolute;
+    left: -6%;
+    width: 20%;
+    height: 100%;
+    background-color: green;
+    background: url('./img/나이키_로고_\(1\).png')no-repeat center / contain;
+}
+
+.top_banner_nav{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    position: absolute;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.t_b_navs{
+    padding: 5px 10px;
+    box-sizing:border-box;
+    font-weight: 500;
+}
+
+.t_b_navs:hover{
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.heart_box{
+    height: 100%;
+    width: 20%;
+    /* background-color: skyblue; */
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.heart_box_div{
+    height: 30%;
+    width: calc(100% / 3);
+    cursor: pointer;
+}
+
+.search{
+    background: url('./img/search.png')no-repeat center / contain;
+}
+
+.heart{
+    background: url('./img/heart.png')no-repeat center / contain;
+}
+
+.basket{
+    background: url('./img/shopping-bag.png')no-repeat center / contain;
+}
+
+.promotion{
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion_down{
+    font-size: 13px;
+}
+
+.promotion_down span{
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.at_black_mode{
+    display: none;
+}
+
+.banner_pics_box{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.banner_pic1{
+    width: calc(100% / 2);
+    height: auto;
+    overflow: hidden;
+    background: url('./img/main_banner_pic1.jpg')no-repeat center / cover;
+}
+
+.banner_pic2{
+    width: calc(100% / 2);
+    height: auto;
+    overflow: hidden;
+    background: url('./img/main_banner_pic2.jpg')no-repeat center / cover;
+}
+
+.main_text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new_thing{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.air_max{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.main_text_box div:nth-child(3){
+    margin: 10px 0px;
+}
+
+.circle_box{
+    display: flex;
+    gap: 5px;
+}
+
+.circle_box div{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nike_iframe{
+    margin: 30px 0px;
+}
+
+.infinite_space_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infinite_space_box div:nth-child(1){
+    font-weight: 900;
+    font-size: 50PX;
+}
+
+.infinite_space_box div:nth-child(2){
+    text-align: center;
+}
+
+.infinite_space_box div:nth-child(3){
+    background:url('./img/nikeqr.jpg')no-repeat center / contain;
+    width: 100%;
+    height: 100px;
+    margin: 30px 0px;
+}
+
+.infinite_space_box div:nth-child(4){
+    text-decoration: underline;
+    font-size: 20px;
+}
