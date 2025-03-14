@@ -120,6 +120,8 @@ body{
     /* background-color: white; */
     position: relative;
     display: flex;
+    transition: all 0.3s; 
+    /*스크롤이벤트를 위한 트랜지션*/
 }
 
 .nike_logo{

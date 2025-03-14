@@ -99,12 +99,16 @@
     </div>
 
     <script>
+        /* 스크롤이벤트리스너로 scrollY값 감지후 배너요소들 이동기능*/
         window.addEventListener('scroll', function(){
-            let top_banner_move = document.getElementsByClassName(top_banner)[0];
-            if(window.scrollY >500){
-                top_banner_move.styl
+            console.log(window.scrollY)
+            let top_banner_move = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
+            if(window.scrollY > 30){
+                top_banner_move.style.top= '-100px';
+            }else if(window.scrollY < 100){
+                top_banner_move.style.top= '0px'; 
             }
-        })
+        });
     </script>
 </body>
 </html>
