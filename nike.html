@@ -62,7 +62,7 @@
         <div class="main">
             <div class="promotion">
                 <div class="promotion_up">네이버페이 프로모션 안내 (3월10일 - 3월16일)</div>
-                <div class="promotion_down">10만원 이상 네이버페이 머니 결제 시 2천원 추가 적립 <span> 자세히보기</span></div>
+                <div class="promotion_down">10만원 이상 네이버페이 머니 결제 시 2천원 추가 적립 <a href="" id="a_line"> 자세히보기</a></div>
             </div>
             <div class="fixed_banner at_black_mode">
                 <div class="fixed_banner_left">Nike Air Max</div>
@@ -99,16 +99,41 @@
     </div>
 
     <script>
+        let top_banner = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
+        let top_banner_cover = document.getElementsByClassName('top_banner_cover')[0];
+            
         /* 스크롤이벤트리스너로 scrollY값 감지후 배너요소들 이동기능*/
         window.addEventListener('scroll', function(){
             console.log(window.scrollY)
-            let top_banner_move = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
             if(window.scrollY > 30){
-                top_banner_move.style.top= '-100px';
-            }else if(window.scrollY < 100){
-                top_banner_move.style.top= '0px'; 
+                top_banner.style.top= '-100px';
+            }else if(window.scrollY < 30){
+                top_banner.style.top= '0px'; 
             }
         });
+
+        let rect = top_banner_cover.getBoundingClientRect();
+        let top_banner_bottom = rect.bottom;
+
+        console.log("topbannerbottom =",top_banner_bottom);/*topbannerbottom 위치값 100 나옴.*/ 
+        //top_banner_cover의 위치구해서 scrollY가 100이상일때부터 스크롤Y가 5보다 높아지면 top_banner_cover가 fixed되어 페이지 어디서든 이용가능하게 만드는기능.
+
+        let lastScrollPosition = 0;
+
+        window.addEventListener('scroll', function(){
+            let scrollPosition = window.scrollY;
+            // console.log("last=" ,lastScrollPosition)
+            // console.log("scrollPosition=", scrollPosition)
+            if(scrollPosition>30 && scrollPosition < lastScrollPosition){//포지션 30이상일때만 조건문 트루인 이유는 이렇게 안잡아주면 최상단 t_nav_box영역까지 다 덮어버리기 때문.
+                top_banner_cover.style.position = 'fixed';
+                top_banner_cover.style.top = '0px';
+                top_banner.style.top = '0px'; // 스크롤Y 30이상일때 탑배너 -100으로 올라간 포지션 스크롤Y30이상인 위치에서 라스트스크롤 포지션이 현재포지션보다 높을때 탑배너 포지션 다시 0.
+            }else{
+                top_banner_cover.style.position = 'relative';
+            }
+            lastScrollPosition = scrollPosition;
+        }) // 스크롤시 마지막위치가 현재위치보다 크기가 클 경우에만 탑배너 fixed되서 위쪽에 고정되게 만듦.
+
     </script>
 </body>
 </html>
