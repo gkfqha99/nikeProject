@@ -169,8 +169,9 @@ body{
     left: 0;
     height: 0px;
     position: fixed;
+    top: 70px;
     background-color: white;
-    transition: all 0.3s;
+    transition: all 0.1s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,32 +179,54 @@ body{
 }
 
 .t_b_navs:hover .New_menu_wrap{
-    height: 500px;
+    height: 380px;
 }
 
 .New:hover .N_m_w_ul{
     display: block;
 }
 
+.New:hover .snkrs{
+    display: block;
+}
+
 .N_m_w_div{
     width: calc((80% - (5px * 3)) / 4);
-    height: 80%;
-    background-color: pink;
+    height: 100%;
+    /* background-color: pink; */
 }
 
 .N_m_w_ul{
     display: none;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .N_m_w_ul li{
     font-size: 12px;
     margin: 10px 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.N_m_w_ul li:hover{
+    color: black;
+}
+
+.N_m_w_ul2 li{
+    margin: 13px 10px;
+    color: gray;
 }
 
 .span_txt{
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 10px;
+}
+
+.snkrs{
+    display: block;
+    display: none;
+    margin: 50px 10px;
+    font-weight: 500;
 }
 
 .heart_box{
