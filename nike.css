@@ -78,6 +78,7 @@ body{
 
 .t_nav_second{
     position: relative;
+    /* background-color: blue; */
 }
 
 .t_nav_ul{
@@ -85,7 +86,7 @@ body{
     background-color: white;
     width: 170px;
     right: 0px;
-    top: 20px;
+    top: 15px;
     padding: 10px;
     border-radius: 5px;
     display: none;
@@ -96,7 +97,7 @@ body{
 .t_nav_second:hover .t_nav_ul{
     /* transform: translateY(5px); */
     display: block;
-   
+    height: 265px;
 }
 
 .t_nav_li{
