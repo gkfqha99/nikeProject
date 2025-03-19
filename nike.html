@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./nike.css">
     <link rel="stylesheet" href="./common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <div class="wrap">
@@ -366,21 +369,23 @@
                     <div>에어맥스 키즈</div>
                 </div>
             </div>
+
             <div class="banner_pics_box">
                 <div class="swiper mySwiper swiper1">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                          <img src="./img/20250319_142912.jpg" />
+                          <img src="./img/swiperImg1.jpg" />
                       </div>
                       <div class="swiper-slide">
-                          <img src="./img/20250319_142941.jpg" />
+                          <img src="./img/swiperImg2.jpg" />
                       </div>
-                      </div>
+                    </div>
                       <div class="swiper-button-next"></div>
                       <div class="swiper-button-prev"></div>
                       <div class="swiper-pagination"></div>
-                    </div>
+                </div>
             </div>
+
             <div class="main_text_box">
                 <div class="new_thing">신제품</div>
                 <div class="air_max">에어맥스 DN8</div>
@@ -442,6 +447,11 @@
             lastScrollPosition = scrollPosition;
         }) // 스크롤시 마지막위치가 현재위치보다 크기가 클 경우에만 탑배너 fixed되서 위쪽에 고정되게 만듦.
 
+
+    //New_menu_wrap이 처음 웹페이지를 열때 , top_banner_nav를 덮는 현상 발생하여
+    //모든 New_menu_wrap이 스크롤Y값 20이하일때는 top값을 100px로 주고 , 20이상일때
+    //마우스를 올려서 top_banner_nav에 호버시 New_menu_wrap이 나올때 top값을 70만줘서
+    //top_banner_nav와 New_menu_wrap이 30px가량 떨어져서 보이는 현상 제어함.
     for (let i = 0; i < 6; i++) {
     (function(num) { //함수에 넣어서 해당 구문 반복되서 해줌
         window.addEventListener('scroll', function() {
@@ -463,12 +473,12 @@
         // direction: 'vertical', // 'horizontal' | 'vertical'
         effect: 'slide', // 'slide', 'fade', 'cube', 'coverflow', 'flip', 'creative' or 'cards'
       slidesPerView: 1, // 한번에 몇개 판 보여줄지 결정. 1 이상의 정수
-      //slidesPerGroup: 1,// 한번에 몇개 판씩 넘길지 결정. 1 이상의 정수
-      spaceBetween: 10, // 판 사이사이의 걸리
+    //   slidesPerGroup: 1,// 한번에 몇개 판씩 넘길지 결정. 1 이상의 정수
+      spaceBetween: 0, // 판 사이사이의 거리
       loop: true, 
       pagination: { 
         el: ".swiper-pagination",
-        type: "bullets", // 'bullets', 'fraction', 'progressbar' or 'custom'
+        type: "fraction", // 'bullets', 'fraction', 'progressbar' or 'custom'
         clickable: true, // 인디케이터/페이징 부분에 클릭 이벤트 달지 말지 결정
       },
       navigation: {
@@ -481,7 +491,13 @@
       },
       speed: 1000 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
     });        
-        
+    
+    document.getElementsByClassName('mySwiper')[0].addEventListener('mouseenter', function(){
+        swiper1.autoplay.stop()
+    })
+    document.getElementsByClassName('mySwiper')[0].addEventListener('mouseleave', function(){
+        swiper1.autoplay.start()	
+    })
     </script>
 </body>
 </html>
