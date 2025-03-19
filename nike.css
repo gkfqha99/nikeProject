@@ -143,21 +143,21 @@ body{
 .top_banner_nav{
     height: 100%;
     width: 60%;
-    background-color: red;
-    position: relative;
+    /* background-color: red; */
+    position: absolute;
     left: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    /* background-color: blue; */
 }
 
 .t_b_navs{
     padding: 5px 10px;
     box-sizing:border-box;
     font-weight: 500;
-    position: relative;
-    background-color: blue;
+    /* background-color: red; */
 }
 
 .t_b_navs:hover{
@@ -167,54 +167,47 @@ body{
 }
 
 .New_menu_wrap{
-    /* width: 1000px; */
-    position: absolute;
-    /* top: 0px; */
-    /* left: -100%; */
+    width: 100vw;
+    left: 0;
+    height: 0px;
+    position: fixed;
+    top: 100px;
     background-color: white;
     transition: all 0.1s;
     display: flex;
     justify-content: center;
     gap: 5px;
-    background-color: skyblue;
-    /* height: 0px; */
-    /* align-items: center; */
 }
 
-/* .pan{
-    width: 100%;
-    height: 0;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    transition: all 0.5s;
-    background: slateblue;
-} */
+.t_b_navs:hover .New_menu_wrap{
+    height: 360px;
+}
 
-/* .t_b_navs:hover .New_menu_wrap{
-    height: 380px;
-} */
-/*기존에 li길이만큼만 안뜨고 380px준대로뜨던부분
-pan이 li길이 계산해서 그만큼만 뜨게하게 시도중 */
+.t_b_navs.special:hover .New_menu_wrap {
+    height: 250px;
+}
+
+.t_b_navs.special1:hover .New_menu_wrap {
+    height: 160px;
+}
+
+.t_b_navs:hover .N_m_w_ul{
+    display: block;
+}
+
 .N_m_w_div{
     width: calc((80% - (5px * 3)) / 4);
-    /* height: 100%; */
+    height: 100%;
     /* background-color: pink; */
 }
 
-/* .New:hover .N_m_w_ul{
-    display: block;
-} */
-
-/* .New:hover .snkrs{
-    display: block;
-} */
-
 .N_m_w_ul{
-    /* display: none; */
-    position: absolute;
-    /* width: 100px; */
+    display: none;
     margin-bottom: 20px;
+}
+
+.t_b_navs:hover .snkrs{
+    display: block;
 }
 
 .N_m_w_ul li{
@@ -247,7 +240,7 @@ pan이 li길이 계산해서 그만큼만 뜨게하게 시도중 */
 
 .heart_box{
     height: 100%;
-    width: 20%;
+    width: 15%;
     /* background-color: skyblue; */
     position: absolute;
     right: 0px;

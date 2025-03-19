@@ -43,7 +43,7 @@
                     <div class="top_banner">
                         <div class="nike_logo"></div>
                         <div class="top_banner_nav">
-                            <div class="t_b_navs New">New
+                            <div class="t_b_navs">New
                                 <div class="New_menu_wrap">
                                     <div class="N_m_w_div">
                                         <ul class="N_m_w_ul"><span class="span_txt">New</span>
@@ -99,10 +99,9 @@
                                         </ul>
                                         <span class="snkrs">SNKRS</span>
                                     </div>
-                                    <div class="pan"></div>
                                 </div>
                             </div>
-                            <div class="t_b_navs New">Men
+                            <div class="t_b_navs">Men
                                 <div class="New_menu_wrap">
                                     <div class="N_m_w_div">
                                         <ul class="N_m_w_ul"><span class="span_txt">New</span>
@@ -153,7 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="t_b_navs New">Women
+                                <div class="t_b_navs">Women
                                     <div class="New_menu_wrap">
                                         <div class="N_m_w_div">
                                             <ul class="N_m_w_ul"><span class="span_txt">New</span>
@@ -206,8 +205,8 @@
                                                 </ul>
                                         </div>
                                     </div>
-                            </div>
-                            <div class="t_b_navs New">Kids
+                                </div>
+                                <div class="t_b_navs">Kids
                                     <div class="New_menu_wrap">
                                         <div class="N_m_w_div">
                                             <ul class="N_m_w_ul"><span class="span_txt">New</span>
@@ -226,7 +225,7 @@
                                             <ul class="N_m_w_ul N_m_w_ul2"><span class="span_txt">신발</span>
                                                 <li>베이비 (160mm 이하)</li>
                                                 <li>리틀키즈 (165-220mm)</li>
-                                                <li>주니어 (225-250mm)</li>
+                                                <li>주니어 (225mm-250mm)</li>
                                                 <li>덩크 & 에어 포스 1</li>
                                                 <li>키즈 이지온 신발</li>
                                                 <li>라이프스타일</li>
@@ -262,7 +261,7 @@
                                         </div>
                                 </div>
                             </div>
-                            <div class="t_b_navs New">Jordan
+                                <div class="t_b_navs special">Jordan
                                     <div class="New_menu_wrap">
                                         <div class="N_m_w_div">
                                             <ul class="N_m_w_ul"><span class="span_txt">New</span>
@@ -312,7 +311,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="t_b_navs New">Sale
+                                <div class="t_b_navs special1">Sale
                                     <div class="New_menu_wrap">
                                         <div class="N_m_w_div">
                                             <ul class="N_m_w_ul"><span class="span_txt">Sale</span>
@@ -344,11 +343,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="pan"></div>
-                            </div>
-                            <div class="pan"></div>
+                                </div>
                         </div>
-
                         <div class="heart_box">
                             <div class="heart_box_div search"></div>
                             <div class="heart_box_div heart"></div>
@@ -401,7 +397,7 @@
         let top_banner = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
         let top_banner_cover = document.getElementsByClassName('top_banner_cover')[0];
             
-        /* 스크롤이벤트리스너로 scrollY값 30이상이면 배너요소들 위쪽으로 이동*/
+        /* 스크롤이벤트리스너로 scrollY값 감지후 배너요소들 이동기능*/
         window.addEventListener('scroll', function(){
             console.log(window.scrollY)
             if(window.scrollY > 30){
@@ -447,26 +443,11 @@
                 }
             });
             }
-        )(i); 
-    } 
-    // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
-   
-
-    let menuQty = 0;
-    let N_m_w_ul = document.getElementsByClassName('N_m_w_ul');
-    let ttt = N_m_w_ul[0].children[0].getBoundingClientRect().height;
-
-    for(let i =0 ; i< N_m_w_ul.length; i++){
-        if(menuQty < N_m_w_ul[i].children.length){
-            menuQty = N_m_w_ul[i].children.length
-        }
-        console.log(N_m_w_ul[i].children[0].getBoundingClientRect().height)
+        )(i); // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
     }
-    console.log("menuQty: "+ menuQty)
-    console.log("what :",menuQty * ttt)
-    
-    let pan_h_size = menuQty * ttt;   
-    console.log("pan_h_size:",pan_h_size)
+
+        
+        
     </script>
 </body>
 </html>
