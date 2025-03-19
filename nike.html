@@ -367,8 +367,19 @@
                 </div>
             </div>
             <div class="banner_pics_box">
-                <div class="banner_pic1"></div>
-                <div class="banner_pic2"></div>
+                <div class="swiper mySwiper swiper1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="./img/20250319_142912.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="./img/20250319_142941.jpg" />
+                      </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
             </div>
             <div class="main_text_box">
                 <div class="new_thing">신제품</div>
@@ -392,6 +403,8 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         let top_banner = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
@@ -446,7 +459,28 @@
         )(i); // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
     }
 
-        
+    var swiper1 = new Swiper(".swiper1", {
+        // direction: 'vertical', // 'horizontal' | 'vertical'
+        effect: 'slide', // 'slide', 'fade', 'cube', 'coverflow', 'flip', 'creative' or 'cards'
+      slidesPerView: 1, // 한번에 몇개 판 보여줄지 결정. 1 이상의 정수
+      //slidesPerGroup: 1,// 한번에 몇개 판씩 넘길지 결정. 1 이상의 정수
+      spaceBetween: 10, // 판 사이사이의 걸리
+      loop: true, 
+      pagination: { 
+        el: ".swiper-pagination",
+        type: "bullets", // 'bullets', 'fraction', 'progressbar' or 'custom'
+        clickable: true, // 인디케이터/페이징 부분에 클릭 이벤트 달지 말지 결정
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      autoplay: {
+        delay: 2000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
+      },
+      speed: 1000 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
+    });        
         
     </script>
 </body>
