@@ -487,11 +487,12 @@
       },
 
       autoplay: {
-        delay: 2000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
+        delay: 1000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
       },
       speed: 1000 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
     });        
     
+    //밑에 요소잡은건 , 스와이프 되는 이미지 마우스 오버시 스와이프의 loop기능 스탑시키는것.
     document.getElementsByClassName('mySwiper')[0].addEventListener('mouseenter', function(){
         swiper1.autoplay.stop()
     })
