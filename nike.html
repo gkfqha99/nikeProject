@@ -405,6 +405,38 @@
                 <div></div>
                 <div><a href="">QR 스캔하여 입장</a></div>
             </div>
+            <div class="content_box">
+                <div class="after_darktour">
+                    <div class="ADT1">After Dark Tour</div>
+                    <div class="ADT2">레이스 참가자는 물론, 모든 러너를 위해</div>
+                </div>
+                <div class="swiper_toggle_box">
+                    <input type="button" value="<" class="swiper-button-prev2">
+                    <input type="button" value=">" class="swiper-button-next2">
+                </div>
+                <div class="swiper_box2">
+                    <div class="swiper swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="inner_direction">
+                                <img src="./img/slide_img (1).jpg" alt="slide_img">
+                                <div class="inner_txt_bic"></div>
+                                <div></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide_img (2).jpg" alt="slide_img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide_img (3).jpg" alt="slide_img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/slide_img (4).jpg" alt="slide_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
     </div>
@@ -499,6 +531,33 @@
     document.getElementsByClassName('mySwiper')[0].addEventListener('mouseleave', function(){
         swiper1.autoplay.start()	
     })
+
+    /* swiper 버튼 */
+    let left_btn = document.getElementsByClassName('left_btn')[0]
+    let right_btn = document.getElementsByClassName('right_btn')[0]
+
+    var swiper2 = new Swiper(".swiper2", {
+        direction: 'horizontal',
+        effect: 'slide', // 'slide', 'fade', 'cube', 'coverflow', 'flip', 'creative' or 'cards'
+      slidesPerView: 3, // 한번에 몇개 판 보여줄지 결정. 1 이상의 정수
+    //   slidesPerGroup: 1,// 한번에 몇개 판씩 넘길지 결정. 1 이상의 정수
+      spaceBetween: 10, // 판 사이사이의 거리
+      loop: true, 
+      pagination: { 
+        el: ".swiper-pagination",
+        type: "fraction", // 'bullets', 'fraction', 'progressbar' or 'custom'
+        clickable: true, // 인디케이터/페이징 부분에 클릭 이벤트 달지 말지 결정
+      },
+      navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+      },
+
+      autoplay: {
+        delay: 1000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
+      },
+      speed: 1000 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
+    });
     </script>
 </body>
 </html>
