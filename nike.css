@@ -450,18 +450,19 @@ body{
     font-size: 20px;
     color: white;
     background-color: rgb(215, 215, 215);
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .swiper_toggle_box > input:hover{
     background-color: #a5a5a5;
+    color: black;
 }
 
 .swiper_box2{
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
 }/*스와이퍼 토글 박스가 앱솔루트가 되서
 위쪽 div가 치고들어온걸 방지하기위해
 마진탑을 줘서 공간을 확보함.*/
@@ -502,3 +503,27 @@ body{
   }
 
 /*********swiper2**************/
+
+.inner_txt_bic{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inner_txt_bic+div{
+    width: 90%;
+    margin: 10px 0px;
+    height: 100px;
+    /* background-color: skyblue; */
+}
+
+.inner_a{
+    margin: 20px 0px;
+}
+
+.inner_a a{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
