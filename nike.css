@@ -472,6 +472,12 @@ body{
 .swiper2 {
     width: 100%;
     height: 100%;
+    
+    /* background-color: pink; */
+  }
+
+  .swiper-wrapper{
+    position: relative;
   }
 
   .swiper2 .swiper-slide {
@@ -498,8 +504,12 @@ body{
     margin: 0;
   }
 
-  .swiper2 .swiper-pagination{
-    color: #F5F5F5;
+  .swiper2 .swiper-pagination2{
+    position: relative;
+    margin-top: 20px;
+    z-index: 9;
+    text-align: center;
+    /* background-color: white; */
   }
 
 /*********swiper2**************/

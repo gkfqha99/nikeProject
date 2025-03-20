@@ -458,6 +458,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination2"></div>
                     </div>
                 </div>
             </div>
@@ -568,8 +569,8 @@
       spaceBetween: 10, // 판 사이사이의 거리
       loop: true, 
       pagination: { 
-        el: ".swiper-pagination",
-        type: "fraction", // 'bullets', 'fraction', 'progressbar' or 'custom'
+        el: ".swiper-pagination2",
+        type: "custom", // 'bullets', 'fraction', 'progressbar' or 'custom'
         clickable: true, // 인디케이터/페이징 부분에 클릭 이벤트 달지 말지 결정
       },
       navigation: {
@@ -580,7 +581,7 @@
       autoplay: {
         delay: 1000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
       },
-      speed: 1000 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
+      speed: 1500 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
     });
     </script>
 </body>
