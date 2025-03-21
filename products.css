@@ -1,0 +1,270 @@
+body{
+    background-color: #F5F5F5;
+    height: 5000px;
+}
+
+#a_line{
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+
+.content_box{
+    margin: 0 auto;
+    width: 90%;
+    /* height: 100%; */
+    /* background-color: white; */
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    /* background-color: green; */
+}
+
+.t_nav_box{
+    width: 100%;
+    height: 30px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a_box{
+    height: 100%;
+    width: 10%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+}
+
+.jordan{
+    width: 50%;
+    height: 100%;
+    background-color: blueviolet;
+    background: url('./img/jordan.png') no-repeat center / contain;
+    cursor: pointer;
+}
+
+.converse{
+    width: 50%;
+    height: 50%;
+    background: url('./img/converse.png')no-repeat center / contain;
+    cursor: pointer;
+}
+
+.t_nav{
+    display: flex;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.t_nav div{
+    border-right: 1px solid black;
+    line-height: 13px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.t_nav div:hover{
+    color: gray;
+}
+
+.t_nav_second{
+    position: relative;
+    /* background-color: blue; */
+}
+
+.t_nav_ul{
+    position: absolute;
+    background-color: white;
+    width: 170px;
+    right: 0px;
+    top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+.t_nav_second:hover .t_nav_ul{
+    /* transform: translateY(5px); */
+    display: block;
+    height: 265px;
+}
+
+.t_nav_li{
+    margin: 10px 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.last_div{
+    border-right: none;
+}
+
+.t_nav_li:hover{
+    color: black;
+}
+
+.top_banner_cover{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    z-index: 99;
+    /* display: none; */
+}
+
+.top_banner{
+    height: 70px;
+    width: 100%;
+    /* background-color: white; */
+    position: relative;
+    display: flex;
+    transition: all 0.3s; 
+    /*스크롤이벤트를 위한 트랜지션*/
+}
+
+.nike_logo{
+    position: absolute;
+    left: -6%;
+    width: 20%;
+    height: 100%;
+    background-color: green;
+    background: url('./img/나이키_로고_\(1\).png')no-repeat center / contain;
+}
+
+.top_banner_nav{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    position: absolute;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    /* background-color: blue; */
+}
+
+.t_b_navs{
+    padding: 5px 10px;
+    box-sizing:border-box;
+    font-weight: 500;
+    /* background-color: red; */
+}
+
+.t_b_navs:hover{
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.New_menu_wrap{
+    width: 100vw;
+    left: 0;
+    height: 0px;
+    position: fixed;
+    top: 100px;
+    background-color: white;
+    transition: all 0.1s;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    z-index: 99;
+}
+
+.t_b_navs:hover .New_menu_wrap{
+    height: 360px;
+}
+
+.t_b_navs.special:hover .New_menu_wrap {
+    height: 250px;
+}
+
+.t_b_navs.special1:hover .New_menu_wrap {
+    height: 160px;
+}
+
+.t_b_navs:hover .N_m_w_ul{
+    display: block;
+}
+
+.N_m_w_div{
+    width: calc((80% - (5px * 3)) / 4);
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.N_m_w_ul{
+    display: none;
+    margin-bottom: 20px;
+}
+
+.t_b_navs:hover .snkrs{
+    display: block;
+}
+
+.N_m_w_ul li{
+    font-size: 12px;
+    margin: 10px 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.N_m_w_ul li:hover{
+    color: black;
+}
+
+.N_m_w_ul2 li{
+    margin: 13px 10px;
+    color: gray;
+}
+
+.span_txt{
+    font-size: 15px;
+    margin: 10px 10px;
+}
+
+.snkrs{
+    display: block;
+    display: none;
+    margin: 50px 10px;
+    font-weight: 500;
+}
+
+.heart_box{
+    height: 100%;
+    width: 15%;
+    /* background-color: skyblue; */
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.heart_box_div{
+    height: 30%;
+    width: calc(100% / 3);
+    cursor: pointer;
+}
+
+.search{
+    background: url('./img/search.png')no-repeat center / contain;
+}
+
+.heart{
+    background: url('./img/heart.png')no-repeat center / contain;
+}
+
+.basket{
+    background: url('./img/shopping-bag.png')no-repeat center / contain;
+}

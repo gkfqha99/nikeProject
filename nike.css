@@ -1,6 +1,6 @@
 body{
     background-color: #F5F5F5;
-    height: 5000px;
+    height: auto;
 }
 
 #a_line{
@@ -541,7 +541,7 @@ body{
 .inc{
     display: flex;
     gap: 10px;
-    margin: 100px 0px;
+    margin-top: 200px;
     font-size: 15px;
     color: rgb(139, 139, 139);
 }
@@ -550,6 +550,7 @@ body{
     border-top: 1px solid rgb(209, 209, 209);
     width: 100%;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .footer_box{
@@ -566,7 +567,7 @@ body{
 .footer_box > div{
     /* background-color: skyblue; */
     width: calc( 100% / 2);
-    margin-top: 10px;
+    margin: 50px 0px;
     color: rgb(139, 139, 139);
 }
 
