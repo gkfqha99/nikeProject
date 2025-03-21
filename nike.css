@@ -509,7 +509,7 @@ body{
     margin-top: 20px;
     z-index: 9;
     text-align: center;
-    /* background-color: white; */
+    background-color: white;
   }
 
 /*********swiper2**************/
@@ -536,4 +536,40 @@ body{
     color: white;
     border-radius: 20px;
     padding: 10px;
+}
+
+.inc{
+    display: flex;
+    gap: 10px;
+    margin: 100px 0px;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+
+.border_gray{
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer_box{
+    margin-top: 30px;
+    display: flex;
+    /* background-color: pink; */
+    width: 100%;
+    /* margin: 0 auto; */
+    gap: 30px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.footer_box > div{
+    /* background-color: skyblue; */
+    width: calc( 100% / 2);
+    margin-top: 10px;
+    color: rgb(139, 139, 139);
+}
+
+.under_line{
+    text-decoration: underline;
 }

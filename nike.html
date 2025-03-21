@@ -415,7 +415,7 @@
                     <input type="button" value=">" class="swiper-button-next2">
                 </div>
                 <div class="swiper_box2">
-                    <div class="swiper swiper2">
+                    <div class="swiper swiper2 mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="inner_direction">
@@ -463,8 +463,30 @@
                 </div>
             </div>
         </div>
-        <div class="footer"></div>
-    </div>
+        <div class="footer">
+            <div class="content_box">
+                <div class="inc">
+                    <div>© 2025 Nike, Inc. All Rights Reserved</div>
+                    <div>이용약관</div>
+                    <div>개인정보처리방침</div>
+                    <div>위치정보이용약관</div>
+                    <div>영상정보처리기기 운영 방침</div>
+                </div>
+                <div class="border_gray"></div>
+                <div class="footer_box">
+                    <div>
+                        (유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스 | 서울 강남구 테헤란로 152 강남파이낸스센터 30층 | 통신판매업신고번호 2011-서울강남-03461 | 등록번호 220-88-09068 사업자 정보 확인
+                        고객센터 전화 문의 080-022-0182 FAX 02-6744-5880 | 이메일 service@nike.co.kr | 호스팅서비스사업자 (유)나이키코리아
+                    </div>
+                    <div>
+                        현금 등으로 결제 시 안전 거래를 위해 나이키 쇼핑몰에서 가입하신 한국결제네트웍스 유한회사의 구매안전 서비스(<span class="under_line">결제대금예치</span>)를 이용하실 수 있습니다.
+                        <br>
+                        콘텐츠산업진흥법에 의한 콘텐츠 보호 안내 자세히 보기
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -570,7 +592,7 @@
       loop: true, 
       pagination: { 
         el: ".swiper-pagination2",
-        type: "custom", // 'bullets', 'fraction', 'progressbar' or 'custom'
+        type: "progressbar", // 'bullets', 'fraction', 'progressbar' or 'custom'
         clickable: true, // 인디케이터/페이징 부분에 클릭 이벤트 달지 말지 결정
       },
       navigation: {
@@ -581,7 +603,14 @@
       autoplay: {
         delay: 1000 // 자동슬라이드 되서 가운데에 몇초동안 있을건지
       },
-      speed: 1500 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간
+      speed: 1500 // 배너가 바깥에서 가운데로 출발해서 도착할때까지의 시간 
+    });
+
+    document.getElementsByClassName('mySwiper2')[0].addEventListener('mouseenter', function(){
+        swiper2.autoplay.stop()
+    });
+    document.getElementsByClassName('mySwiper2')[0].addEventListener('mouseleave', function(){
+        swiper2.autoplay.start()
     });
     </script>
 </body>
