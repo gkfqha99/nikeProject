@@ -358,7 +358,9 @@ body{
 }
 
 .side_menu{
-    width: 17%;
+    min-width: 200px;
+    /* padding: 0px 20px; */
+    box-sizing: border-box;
     height: 100%;
     background-color: white;
 }
@@ -372,6 +374,10 @@ body{
 
 .first_box div{
     margin-bottom: 5px;
+}
+
+.sec_box{
+    border-bottom: 1px solid rgba(197, 197, 197, 0.5);
 }
 
 .sec_box1{
@@ -397,11 +403,11 @@ body{
 }
 
 .chk_box{
-    height: 100px;
+    height: 0;
     width: 100%;
     overflow: hidden;
     transition: all 0.5s;
-    background-color: orange;
+    /* background-color: orange; */
     /* border-bottom: 1px solid rgba(197, 197, 197, 0.5); */
 }
 

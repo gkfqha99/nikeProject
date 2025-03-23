@@ -378,7 +378,7 @@
                         <div class="sec_box">
                             <div class="open_box">
                                 <div class="sec_box1">성별</div>
-                                <div class="open_sec">∧</div>
+                                <div class="open_sec">∨</div>
                             </div>
                             <div class="chk_box">
                                 <div class="chk_div"><input type="checkbox" class="chk_size">남성</div>
@@ -389,11 +389,92 @@
                         <div class="sec_box">
                             <div class="open_box">
                                 <div class="sec_box1">키즈</div>
-                                <div class="open_sec">∧</div>
+                                <div class="open_sec">∨</div>
                             </div>
                             <div class="chk_box">
                                 <div class="chk_div"><input type="checkbox" class="chk_size">남아</div>
                                 <div class="chk_div"><input type="checkbox" class="chk_size">여아</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">할인율</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">30% 이상</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">20% 이상</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">스포츠</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">라이프스타일</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">스케이트보딩</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">키즈연령</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">베이비(0-3세)</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">리틀키즈(3-7세)</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">주니어(7-15세)</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">가격대</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">50,000 원~100,000 원</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">100,000 원~150,000 원</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">150,000 원~200,000 원</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">브랜드</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">나이키 스포츠웨어</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">용도</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">습한 날씨</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">추가 사이즈</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">US 사이즈</div>
+                            </div>
+                        </div>
+                        <div class="sec_box">
+                            <div class="open_box">
+                                <div class="sec_box1">컬렉션 (1)</div>
+                                <div class="open_sec">∨</div>
+                            </div>
+                            <div class="chk_box">
+                                <div class="chk_div"><input type="checkbox" class="chk_size">티엠포</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">에어포스 1</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">코르테즈</div>
+                                <div class="chk_div"><input type="checkbox" class="chk_size">베나시</div>
                             </div>
                         </div>
                     </div>
@@ -461,37 +542,14 @@
         )(i); // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
     }
 
-    let open_sec = document.getElementsByClassName('open_sec')[0];
-
-    // function open(){
-        
-    //     let chk_box = document.getElementsByClassName('chk_box')[0];
-    //     let now_chk_box = chk_box.style.height;
-        
-    //     open_sec.addEventListener('click', function(){
-    //         if(now_chk_box === '0px' || now_chk_box === ''){
-    //             chk_box.style.height = auto + 10;
-    //             open_sec.textContent = '∧';
-    //             open_sec.style.transform = 'scale(1.2)';
-    //         }else{
-    //             chk_box.style.height = '0px';
-    //             open_sec.textContent = '∨';
-    //             open_sec.style.transform = 'scale(1)';            
-    //         }
-    //     now_chk_box = chk_box.style.height;
-    //     console.log(now_chk_box);
-    //     })
-    // }
-    // open();
-
-
-    //사이드메뉴 , div 크기에 맞게 높이 생성. 위에 주석달린건 div가 몇개든 높이 100px로 픽스되있어서 들쭉날쭉 한데,
-    // 밑에 함수적용한거는 크기에 맞게 생성가능. offsetHeight , offsetHeight , textContent 기능 새로배움.
+    //open 함수 하는일. open_sec 클릭시 chk_box의 높이담고 있는 nowChkBox의 높이를
+    //chkBox.offsetHeight 오프셋하잇으로 구해서 높이가 0이면 chk_box의 하잇을 chkBox.scrollHeight에
+    //+20 px해서 각 sec_box가 가지고 있는 chk_div의 갯수만큼 유동적으로 높이조절하게 해줌.
     function open(openSec, chkBox) {
     openSec.addEventListener('click', function() {
         let nowChkBox = chkBox.offsetHeight;
         if (nowChkBox === 0) {
-            chkBox.style.height = (chkBox.offsetHeight + 10) + 'px'; // 요소의 높이 + 20px
+            chkBox.style.height = (chkBox.scrollHeight + 20) + 'px'; // 요소의 높이 + 20px
             openSec.textContent = '∧'; // 아이콘 변경
             openSec.style.transform = 'scale(1.2)';
         } else {
@@ -499,14 +557,17 @@
             openSec.textContent = '∨'; // 아이콘 변경
             openSec.style.transform = 'scale(1)';
         }
-    });
-}
+        });
+    }
 
-let secBoxes = document.getElementsByClassName('sec_box');
-for (let i = 0; i < secBoxes.length; i++) {
-    let openSec = secBoxes[i].getElementsByClassName('open_sec')[0];
-    let chkBox = secBoxes[i].getElementsByClassName('chk_box')[0];
-    open(openSec, chkBox); // 매개변수로 전달
-}
+    //sec_box 요소 잡고 자식인 open_sec , chk_box 반복문으로 다 선택해준뒤에
+    // open 함수의 인자로 open_sec , chk_box 넣어서 모든open_sec , chk_box에 open함수 적용시켜줌.
+    let secBoxes = document.getElementsByClassName('sec_box');
+    for (let i = 0; i < secBoxes.length; i++) {
+        let openSec = secBoxes[i].getElementsByClassName('open_sec')[0];
+        let chkBox = secBoxes[i].getElementsByClassName('chk_box')[0];
+        open(openSec, chkBox); 
+    }
+
 </script>
 </html>
