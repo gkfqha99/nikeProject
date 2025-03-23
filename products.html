@@ -484,11 +484,14 @@
     // }
     // open();
 
+
+    //사이드메뉴 , div 크기에 맞게 높이 생성. 위에 주석달린건 div가 몇개든 높이 100px로 픽스되있어서 들쭉날쭉 한데,
+    // 밑에 함수적용한거는 크기에 맞게 생성가능. offsetHeight , offsetHeight , textContent 기능 새로배움.
     function open(openSec, chkBox) {
     openSec.addEventListener('click', function() {
         let nowChkBox = chkBox.offsetHeight;
         if (nowChkBox === 0) {
-            chkBox.style.height = (chkBox.scrollHeight + 10) + 'px'; // 요소의 높이 + 20px
+            chkBox.style.height = (chkBox.offsetHeight + 10) + 'px'; // 요소의 높이 + 20px
             openSec.textContent = '∧'; // 아이콘 변경
             openSec.style.transform = 'scale(1.2)';
         } else {
