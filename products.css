@@ -358,8 +358,6 @@ body{
 }
 
 .side_menu{
-    min-width: 200px;
-    /* padding: 0px 20px; */
     box-sizing: border-box;
     height: 100%;
     background-color: white;
@@ -377,6 +375,7 @@ body{
 }
 
 .sec_box{
+    width: 200px;
     border-bottom: 1px solid rgba(197, 197, 197, 0.5);
 }
 
@@ -391,7 +390,8 @@ body{
 }
 
 .open_sec{
-    font-weight: 500;
+    cursor: pointer;
+    font-weight: 700;
     font-size: 15px;
     transition: transform 0.3s ease;
     display: inline-block;
@@ -413,4 +413,61 @@ body{
 
 .chk_div{
     font-size: 14x;
+}
+
+.main_box_items{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.main_box_item{
+    width: calc((100% - (10px *2 )) / 3);
+    height: 500px;
+    /* background-color: blue; */
+}
+
+.subs_box{
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.subs_box div{
+    padding: 2px 0px;
+}
+
+.item_no{
+    display: none;
+}
+
+.subs_box_title{
+    font-weight: 700;
+}
+
+.subs_box_section{
+    color: rgb(201, 201, 201);
+}
+
+.subs_box_price{
+    color: black;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.img_box{
+    /* background-color: white; */
+    position: relative;
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img_box img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./products.css">
     <link rel="stylesheet" href="./common.css">
+    <script src="item_list.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -478,6 +479,8 @@
                             </div>
                         </div>
                     </div>
+                    <div class="main_box_items">
+                    </div>
                 </div>
             </div>
         </div>
@@ -490,7 +493,7 @@
             
         /* 스크롤이벤트리스너로 scrollY값 감지후 배너요소들 이동기능*/
         window.addEventListener('scroll', function(){
-            console.log(window.scrollY)
+            // console.log(window.scrollY)
             if(window.scrollY > 30){
                 top_banner.style.top= '-100px';
             }else if(window.scrollY < 30){
@@ -501,7 +504,7 @@
         let rect = top_banner_cover.getBoundingClientRect();
         let top_banner_bottom = rect.bottom;
 
-        console.log("topbannerbottom =",top_banner_bottom);/*topbannerbottom 위치값 100 나옴.*/ 
+        // console.log("topbannerbottom =",top_banner_bottom);/*topbannerbottom 위치값 100 나옴.*/ 
         //top_banner_cover의 위치구해서 scrollY가 100이상일때부터 스크롤Y가 5보다 높아지면 top_banner_cover가 fixed되어 페이지 어디서든 이용가능하게 만드는기능.
 
         let lastScrollPosition = 0;
@@ -569,5 +572,36 @@
         open(openSec, chkBox); 
     }
 
+    /*
+    <div class="main_box_items">
+       <div class="main_box_item"></div>
+       <div class="main_box_item"></div>
+       <div class="main_box_item"></div>
+       <div class="main_box_item"></div>
+       <div class="main_box_item"></div>
+       <div class="main_box_item"></div>
+    </div>
+    */
+
+    let main_box_items = document.getElementsByClassName('main_box_items')[0];
+
+    for(let i=0; i<item_list.length; i++) {
+        main_box_items.innerHTML += `
+            <div class="main_box_item">
+                <div class="img_box">
+                    <img src="./img/products/${item_list[i].src}" alt="">
+                </div>
+                <div class="subs_box">
+                    <div class="item_no">${item_list[i].item_no}</div>
+                    <div class="subs_box_title">${item_list[i].title}</div>
+                    <div class="subs_box_section">${item_list[i].section}<div>
+                    <div class="subs_box_color">${item_list[i].color}</div>
+                    <div class="subs_box_price">
+                        ${(item_list[i].price).toLocaleString('ko')}
+                    </div>
+                </div>
+            </div> 
+        `;
+    }
 </script>
 </html>
