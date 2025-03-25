@@ -20,5 +20,4 @@ const item_list = [
     {item_no:19, section:'남성신발', src:'dunk (19).png', title:'덩크로우 화이트크림', price:'112,000원', color:'1개의 색상',},
     {item_no:20, section:'여성신발', src:'dunk (20).png', title:'덩크로우 파스텔', price:'132,000원', color:'1개의 색상',},
     {item_no:21, section:'여성신발', src:'dunk (21).png', title:'덩크로우 누끼', price:'142,000원', color:'1개의 색상',},
-    {item_no:22, section:'남성신발', src:'dunk (22).png', title:'덩크로우 페이던트', price:'123,000원', color:'1개의 색상',},
-] 
+]

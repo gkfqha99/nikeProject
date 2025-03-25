@@ -303,23 +303,28 @@ body{
 .main_top_banner{
     width: 100%;
     height: 90px;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     /* line-height: 100px; */
+    position: relative;
 }
 
 .mtb_top{
-    background-color: pink;
+    /* background-color: pink; */
     font-size: 13px;
     font-weight: 500;
     width: 100%;
     height: 25px;
+    position: absolute;
+    top: 15px;
     line-height: 30px;
 }
 
 .mtb_bot{
     width: 100%;
     height: 45px;
-    background-color: green;
+    /* background-color: green; */
+    position: absolute;
+    top: 35px;
     line-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -417,7 +422,6 @@ body{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-left: 50px;
 }
 
 .main_box_item{
@@ -427,21 +431,24 @@ body{
 }
 
 .img_box{
+    /* background-color: white; */
+    position: relative;
+    height: 300px;
     width: 100%;
-    height: 60%;
     overflow: hidden;
 }
 
 .img_box img{
+    height: 300px;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
 .subs_box{
-    height: 40%;
+    height: 200px;
     padding: 10px;
     box-sizing: border-box;
+    position: absolute;
 }
 
 .subs_box div{
