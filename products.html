@@ -480,6 +480,26 @@
                         </div>
                     </div>
                     <div class="main_box_items">
+                        <!-- 
+                        for(let i=0; i<item_list.length; i++) {
+                        main_box_items.innerHTML += `
+                            <div class="main_box_item">
+                                <a href="./detail.html?itemNo=${item_list[i].item_no}">
+                                    <div class="img_box">
+                                        <img src="./img/products/${item_list[i].src}" alt="">
+                                    </div>
+                                    <div class="subs_box">
+                                        <div class="item_no">${item_list[i].item_no}</div>
+                                        <div class="subs_box_title">${item_list[i].title}</div>
+                                        <div class="subs_box_section">${item_list[i].section}<div>
+                                        <div class="subs_box_color">${item_list[i].color}</div>
+                                        <div class="subs_box_price">
+                                            ${(item_list[i].price).toLocaleString('ko')}
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                         `;-->
                     </div>
                 </div>
             </div>
@@ -602,18 +622,20 @@
     for(let i=0; i<item_list.length; i++) {
         main_box_items.innerHTML += `
             <div class="main_box_item">
-                <div class="img_box">
-                    <img src="./img/products/${item_list[i].src}" alt="">
-                </div>
-                <div class="subs_box">
-                    <div class="item_no">${item_list[i].item_no}</div>
-                    <div class="subs_box_title">${item_list[i].title}</div>
-                    <div class="subs_box_section">${item_list[i].section}<div>
-                    <div class="subs_box_color">${item_list[i].color}</div>
-                    <div class="subs_box_price">
-                        ${(item_list[i].price).toLocaleString('ko')}
+                <a href="./detail.html?itemNo=${item_list[i].item_no}">
+                    <div class="img_box">
+                        <img src="./img/products/${item_list[i].src}" alt="">
                     </div>
-                </div>
+                    <div class="subs_box">
+                        <div class="item_no">${item_list[i].item_no}</div>
+                        <div class="subs_box_title">${item_list[i].title}</div>
+                        <div class="subs_box_section">${item_list[i].section}<div>
+                        <div class="subs_box_color">${item_list[i].color}</div>
+                        <div class="subs_box_price">
+                            ${(item_list[i].price).toLocaleString('ko')}
+                        </div>
+                    </div>
+                </a>
             </div> 
         `;
     }
