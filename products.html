@@ -488,18 +488,28 @@
     </div>
 </body>
 <script>
-    let top_banner = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
+        let top_banner = document.getElementsByClassName('top_banner')[0];//top_banner 요소 선택
         let top_banner_cover = document.getElementsByClassName('top_banner_cover')[0];
             
         /* 스크롤이벤트리스너로 scrollY값 감지후 배너요소들 이동기능*/
         window.addEventListener('scroll', function(){
-            // console.log(window.scrollY)
+            console.log('scrollY =',window.scrollY)
             if(window.scrollY > 30){
                 top_banner.style.top= '-100px';
             }else if(window.scrollY < 30){
                 top_banner.style.top= '0px'; 
             }
         });
+
+        let mtb_bot =document.getElementsByClassName('mtb_bot')[0];
+        window.addEventListener('scroll', function(){
+            if(window.scrollY > 185){
+                mtb_bot.style.position='fixed';
+                mtb_bot.style.top = '0px';
+            }else{
+                mtb_bot.style.position='absolute';
+            }
+        })
 
         let rect = top_banner_cover.getBoundingClientRect();
         let top_banner_bottom = rect.bottom;
@@ -603,5 +613,7 @@
             </div> 
         `;
     }
+
+
 </script>
 </html>

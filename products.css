@@ -295,7 +295,7 @@ body{
 /**********main*************/
 
 .main{
-    background-color: green;
+    background-color: white;
     width: 100%;
     height: 100%;
 }
@@ -305,26 +305,21 @@ body{
     height: 90px;
     background-color: skyblue;
     /* line-height: 100px; */
-    position: relative;
 }
 
 .mtb_top{
-    /* background-color: pink; */
+    background-color: pink;
     font-size: 13px;
     font-weight: 500;
     width: 100%;
     height: 25px;
-    position: absolute;
-    top: 15px;
     line-height: 30px;
 }
 
 .mtb_bot{
     width: 100%;
     height: 45px;
-    /* background-color: green; */
-    position: absolute;
-    top: 35px;
+    background-color: green;
     line-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -350,7 +345,7 @@ body{
 }
 
 .main_box{
-    background-color: pink;
+    /* background-color: pink; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -360,7 +355,7 @@ body{
 .side_menu{
     box-sizing: border-box;
     height: 100%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .first_box{
@@ -418,10 +413,11 @@ body{
 .main_box_items{
     width: 100%;
     height: 100%;
-    background-color: orange;
+    /* background-color: orange; */
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-left: 50px;
 }
 
 .main_box_item{
@@ -430,10 +426,22 @@ body{
     /* background-color: blue; */
 }
 
+.img_box{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .subs_box{
+    height: 40%;
     padding: 10px;
     box-sizing: border-box;
-    position: absolute;
 }
 
 .subs_box div{
@@ -456,18 +464,4 @@ body{
     color: black;
     font-weight: 500;
     margin: 10px 0px;
-}
-
-.img_box{
-    /* background-color: white; */
-    position: relative;
-    height: 60%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.img_box img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
