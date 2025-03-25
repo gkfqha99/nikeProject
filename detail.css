@@ -387,6 +387,71 @@ body{
     width: 36%;
     height: 750px;
     overflow: auto;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
+.subs_box_title{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.subs_box_section{
+    color: rgb(222, 222, 222);
+    margin-bottom: 7px;
+}
+
+.subs_box_price{
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+.size_box{
+    width: 100%;
+    height: 25px;
+    background-color: pink;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.size_sel{
+    width: 65%;
+    background-color: skyblue;
+    font-weight: 600;
+}
+
+.size_pic{
+    width: 10%;
+    height: 100%;
+    /* background-color: blue; */
+    background: url('./img/size.png')no-repeat center / contain;
+}
+
+.size_guide{
+    width: 25%;
+    height: 100%;
+    background-color: green;
+}
+
+.size_boxes{
+    display: flex;
+    font-size: 17px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.size_boxes div{
+    border: 1px solid rgb(236, 236, 236);
+    padding: 5px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size_boxes div:hover{
+    border-color: black;
+}
+
+.size_boxes div:last-child{
+    background-color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
+}
