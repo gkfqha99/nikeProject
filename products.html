@@ -363,7 +363,7 @@
                 <div class="main_top_banner">
                     <div class="mtb_top">신발 / 나이키 덩크</div>
                     <div class="mtb_bot">
-                        <div class="mtb_bot_left">나이키 덩크 신발 (71)</div>
+                        <div class="mtb_bot_left">나이키 덩크 신발 (21)</div>
                         <div class="mtb_bot_right_box">
                             <div><a href="">필터 숨기기 ⇆</a></div>
                             <div><a href="">정렬 기준: ↓</a></div>
@@ -552,9 +552,9 @@
     openSec.addEventListener('click', function() {
         let nowChkBox = chkBox.offsetHeight;
         if (nowChkBox === 0) {
-            chkBox.style.height = (chkBox.scrollHeight + 20) + 'px'; // 요소의 높이 + 20px
+            chkBox.style.height = (chkBox.scrollHeight + 10) + 'px'; // 요소의 높이 + 20px
             openSec.textContent = '∧'; // 아이콘 변경
-            openSec.style.transform = 'scale(1.2)';
+            openSec.style.transform = 'scale(1)';
         } else {
             chkBox.style.height = '0px'; // 높이 줄이기
             openSec.textContent = '∨'; // 아이콘 변경
@@ -572,17 +572,9 @@
         open(openSec, chkBox); 
     }
 
-    /*
-    <div class="main_box_items">
-       <div class="main_box_item"></div>
-       <div class="main_box_item"></div>
-       <div class="main_box_item"></div>
-       <div class="main_box_item"></div>
-       <div class="main_box_item"></div>
-       <div class="main_box_item"></div>
-    </div>
-    */
 
+    //외부 js파일인 item_list.js 파일의 배열을 이용하여 , main_box_items 안의 html을
+    //반복문으로 꾸며줌. 내부의 각 div에는 item_list.js안의 객체요소 들어감. 
     let main_box_items = document.getElementsByClassName('main_box_items')[0];
 
     for(let i=0; i<item_list.length; i++) {
