@@ -416,6 +416,49 @@
                         </ul>
                     </div>
                     <div class="detail_info">상품 상세 정보 보기</div>
+                    <div class="acodian_box">
+                        <div class="acodian_box_title">무료 배송 및 반품</div>
+                        <div class="acodian_box_arrow">∨</div>
+                    </div>
+                    <div class="acodian_box_sub">
+                        일반 배송<br>
+
+                        • 배송지역: 전국 (일부 지역 제외)<br>
+
+                        • 배송비: 무료배송<br>
+
+                        • 제품 수령일로부터 14일 이내 제품에 대해서만 무료 반품 서비스가 가능합니다.<br>
+
+                        • 나이키는 교환 서비스를 제공하지 않습니다.<br>
+
+                        일반 <span>배송 자세히 알아보기</span><br>
+
+                        반품 <span>자세히 알아보기</span><br>
+                        <br>
+                        <br>
+
+                        오늘도착 서비스<br>
+
+                        • 이용시간: 오전 10시 30분까지 결제 시, 당일 도착 (일요일, 공휴일 제외)<br>
+
+                        • 서비스지역: 서울∙과천∙의왕∙군포∙수원∙성남∙안양시 전체, 용인시 수지구∙기흥구, 부천시 중동∙상동∙심곡동<br>
+
+                        • 서비스비용: 5,000원<br>
+
+                        <span>자세히 알아보기</span><br>
+                        <br>
+                        <br>
+                        A/S 안내 <br>
+
+                        • 나이키 온라인에서 구매하신 제품에 대한 A/S 는 나이키코리아 고객센터(080-022-0182)에서 유선으로만 접수 가능합니다.<br>
+                        <span>자세히 알아보기</span>
+                    </div>
+                    <div class="acodian_box">
+                        <div class="acodian_box_title">무료 배송 및 반품</div>
+                        <div class="acodian_box_arrow">∨</div>
+                    </div>
+                    <div class="acodian_box_sub">
+                    </div>
                 </div>
             </div>
         </div>
@@ -479,5 +522,27 @@
             }
         )(i); // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
     }
+
+    /*
+    <div class="acodian_box">
+        <div class="acodian_box_title">무료 배송 및 반품</div>
+        <div class="acodian_box_arrow">∨</div>
+    </div>
+    <div class="acodian_box_sub">     
+    */
+
+    let acodian_box_arrow = document.getElementsByClassName('acodian_box_arrow')[0];
+    let acodian_box_sub = document.getElementsByClassName('acodian_box_sub')[0];
+
+    acodian_box_arrow.addEventListener('click', function(){
+        if(acodian_box_sub.style.height === '0px' || acodian_box_sub.style.height === ''){
+            acodian_box_sub.style.height = '560px';
+            acodian_box_arrow.textContent = '∧';
+        }else{
+            acodian_box_sub.style.height = '0';
+            acodian_box_arrow.textContent = '∨';
+        }
+    })
+
 </script>
 </html>

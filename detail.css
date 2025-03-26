@@ -295,7 +295,7 @@ body{
 .main_div_box{
     margin: 0 auto;
     width: 70%;
-    height: 1500px;
+    height: auto;
     background-color: skyblue;
     display: flex;
     gap: 15px;
@@ -470,6 +470,10 @@ body{
     text-align: center;
     margin-top: 30px;
     font-weight: 700;
+} 
+
+.basket_circle:hover{
+    background-color: gray;
 }
 
 .wish_list_circle{
@@ -481,6 +485,10 @@ body{
     text-align: center;
     margin-top: 10px;
     font-weight: 700;
+}
+
+.wish_list_circle:hover{
+    border-color: black;
 }
 
 .free_pickup{
@@ -511,6 +519,33 @@ body{
 
 .detail_info{
     margin: 20px 0px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.acodian_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.acodian_box_arrow{
+    cursor: pointer;
+    transition: all 0.5;
+}
+
+.acodian_box_sub{
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: red;
+    height:0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.acodian_box_sub span{
     font-weight: 500;
     text-decoration: underline;
 }
