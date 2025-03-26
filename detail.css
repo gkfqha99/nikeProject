@@ -617,17 +617,43 @@ body{
     margin-right: 5px;
 }
 
-.shoes_slide{
-    margin-top: 20px;
+.swiper3{
     width: 100%;
+    height: 500px;
+    margin-top: 20px;
     overflow: auto;
-    height: auto;
     background-color: aqua;
-    display: flex;
-    gap: 10px;
 }
 
-.sample_div img{
-    width: 500px;
-    height: auto;
+.slide_box{
+    width: 98%;
+    height: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.slide_img_box{
+    height: 80%;
+    width: 100%;
+}
+
+.slide_img_box img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.slide_title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slide_sub{
+    color: rgb(202, 202, 202);
+}
+
+.slide_price{
+    margin-top: 20px;
+    font-weight: 500;
 }

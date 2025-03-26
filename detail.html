@@ -516,13 +516,70 @@
                         <span class="reco_swiper_btn2">></span>
                     </div>
                 </div>
-                <div class="shoes_slide">
+                <div class="swiper swiper3 mySwiper3">
+                    <div class="swiper-wrapper slide_wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide_box">
+                            <div class="slide_img_box">
+                                <img src="./img/products/dunk (1).png" alt="">
+                            </div>
+                            <div class="slide_title">덩크로우 핑크</div>
+                            <div class="slide_sub">여성 신발</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_box">
+                            <div class="slide_img_box">
+                                <img src="./img/products/dunk (2).png" alt="">
+                            </div>
+                            <div class="slide_title">덩크로우 핑크</div>
+                            <div class="slide_sub">여성 신발</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_box">
+                            <div class="slide_img_box">
+                                <img src="./img/products/dunk (3).png" alt="">
+                            </div>
+                            <div class="slide_title">덩크로우 핑크</div>
+                            <div class="slide_sub">여성 신발</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide_box">
+                            <div class="slide_img_box">
+                                <img src="./img/products/dunk (4).png" alt="">
+                            </div>
+                            <div class="slide_title">덩크로우 핑크</div>
+                            <div class="slide_sub">여성 신발</div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="swiper-button-next3"></div>
+                      <div class="swiper-button-prev3"></div>
+                      <div class="swiper-pagination3"></div>
+                      </div>
                 </div>
-            </div>
         </div>
         <div class="footer"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+          var swiper3 = new Swiper(".mySwiper3", {
+      effect: 'slide', 
+      slidesPerView: 3,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination3",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+      },
+    });
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
 </html>
