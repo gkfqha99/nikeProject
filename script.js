@@ -55,6 +55,22 @@ window.addEventListener('scroll', function() {
     }
 )(i); // 함수가 끝나자마자 num의 참값에 i를 넣어줘서 적용시킬 메뉴들에 다 적용.
 }
+
+//detail 페이지 슈즈슬라이드 부분 item_list 배열 이용해서 모든 아이템 한번에 다넣어줌.
+let shoes_slide = document.getElementsByClassName('shoes_slide')[0];
+shoes_slide.innerHTML ='';
+
+for(let i=0; i<item_list.length; i++){
+shoes_slide.innerHTML += `
+    <div class="sample_div">
+        <img src="./img/products/${item_list[i].src}" alt="">
+        <div class="sample_name">${item_list[i].title}</div>
+        <div class="sample_price">${item_list[i].price}</div>
+        <div class="sample_sub">${item_list[i].section}</div>
+    </div>
+`;
+}
+
 });
 
 /*
@@ -291,4 +307,4 @@ swiper2.autoplay.start()
             openSec.style.transform = 'scale(1)';
         }
         });
-    }
+    };

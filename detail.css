@@ -591,3 +591,43 @@ body{
     width: 100%;
     height: auto;
 }
+
+.reco_box{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: greenyellow;
+    height: auto;
+}
+
+.reco{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.reco_swiper_btn_box span{
+    background-color: rgb(235, 235, 235);
+    font-size: 25px;
+    padding: 7px 20px;
+    border-radius: 30px;
+}
+
+.reco_swiper_btn1{
+    margin-right: 5px;
+}
+
+.shoes_slide{
+    margin-top: 20px;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    gap: 10px;
+}
+
+.sample_div img{
+    width: 500px;
+    height: auto;
+}
