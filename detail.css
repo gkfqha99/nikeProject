@@ -548,3 +548,46 @@ body{
     font-weight: 500;
     text-decoration: underline;
 }
+
+.main2{
+    margin: 0 auto;
+    width: 90%;
+    height: 5000px;
+    /* background-color: pink; */
+}
+
+.more_style_box{
+    margin-top: 30px;
+}
+
+.more_style{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.more_style_sub{
+    margin: 10px 0px;
+}
+
+.more_style_btn button{
+    border: 1px solid rgb(215, 215, 215);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 17px;
+}
+
+.bic_pics_box{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+
+.bic_pic{
+    margin-top: 5px;
+}
+
+.bic_pic img{
+    width: 100%;
+    height: auto;
+}
