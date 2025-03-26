@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./detail.css">
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <div class="wrap">
@@ -512,55 +513,17 @@
                 <div class="reco_box">
                     <div class="reco">추천 제품</div>
                     <div class="reco_swiper_btn_box">
-                        <span class="reco_swiper_btn1"><</span>
-                        <span class="reco_swiper_btn2">></span>
+                        <input type="button" value="<" class="swiper-button-prev3">
+                        <input type="button" value=">" class="swiper-button-next3">
                     </div>
                 </div>
 
 
                 <div class="swiper swiper3 mySwiper3">
                     <div class="swiper-wrapper slide_wrapper">
-                      <!-- <div class="swiper-slide">
-                        <div class="slide_box">
-                            <div class="slide_img_box">
-                                <img src="./img/products/dunk (1).png" alt="">
-                            </div>
-                            <div class="slide_title">덩크로우 핑크</div>
-                            <div class="slide_sub">여성 신발</div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slide_box">
-                            <div class="slide_img_box">
-                                <img src="./img/products/dunk (2).png" alt="">
-                            </div>
-                            <div class="slide_title">덩크로우 핑크</div>
-                            <div class="slide_sub">여성 신발</div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slide_box">
-                            <div class="slide_img_box">
-                                <img src="./img/products/dunk (3).png" alt="">
-                            </div>
-                            <div class="slide_title">덩크로우 핑크</div>
-                            <div class="slide_sub">여성 신발</div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="slide_box">
-                            <div class="slide_img_box">
-                                <img src="./img/products/dunk (4).png" alt="">
-                            </div>
-                            <div class="slide_title">덩크로우 핑크</div>
-                            <div class="slide_sub">여성 신발</div>
-                        </div>
-                      </div> -->
                     </div>
-                      <div class="swiper-button-next3"></div>
-                      <div class="swiper-button-prev3"></div>
-                      <div class="swiper-pagination3"></div>
                 </div>
+                <div class="swiper-pagination3"></div>
 
 
             </div>
@@ -569,21 +532,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-          var swiper3 = new Swiper(".mySwiper3", {
-      effect: 'slide', 
-      slidesPerView: 3,
-      spaceBetween: 0,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination3",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next3",
-        prevEl: ".swiper-button-prev3",
-      },
-    });
-
+    document.addEventListener('DOMContentLoaded', function() {
     let slide_wrapper = document.getElementsByClassName('slide_wrapper')[0];
     slide_wrapper.innerHTML = '';
 
@@ -599,7 +548,27 @@
               <div class="slide_price">${item_list[i].price}</div>
           </div>
         </div>
-    `};
+    `}; 
+
+    var swiper3 = new Swiper(".mySwiper3", {
+      effect: 'slide', 
+      slidesPerView: 4,
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination3",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+      },
+      autoplay: {
+        delay: 1000
+        },
+        speed: 1500
+    }) 
+    });;
 
 
     </script>
