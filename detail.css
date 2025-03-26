@@ -533,14 +533,13 @@ body{
 
 .acodian_box_arrow{
     cursor: pointer;
-    transition: all 0.5;
 }
 
 .acodian_box_sub{
     margin-top: 20px;
     margin-right: 20px;
     background-color: red;
-    height:0px;
+    height: 0px;
     overflow: hidden;
     transition: all 0.5s;
 }
