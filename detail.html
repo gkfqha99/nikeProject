@@ -516,9 +516,11 @@
                         <span class="reco_swiper_btn2">></span>
                     </div>
                 </div>
+
+
                 <div class="swiper swiper3 mySwiper3">
                     <div class="swiper-wrapper slide_wrapper">
-                      <div class="swiper-slide">
+                      <!-- <div class="swiper-slide">
                         <div class="slide_box">
                             <div class="slide_img_box">
                                 <img src="./img/products/dunk (1).png" alt="">
@@ -553,13 +555,15 @@
                             <div class="slide_title">덩크로우 핑크</div>
                             <div class="slide_sub">여성 신발</div>
                         </div>
-                      </div>
-                      </div>
+                      </div> -->
+                    </div>
                       <div class="swiper-button-next3"></div>
                       <div class="swiper-button-prev3"></div>
                       <div class="swiper-pagination3"></div>
-                      </div>
                 </div>
+
+
+            </div>
         </div>
         <div class="footer"></div>
     </div>
@@ -579,6 +583,25 @@
         prevEl: ".swiper-button-prev3",
       },
     });
+
+    let slide_wrapper = document.getElementsByClassName('slide_wrapper')[0];
+    slide_wrapper.innerHTML = '';
+
+    for(let i=0; i<item_list.length; i++){
+    slide_wrapper.innerHTML += `
+        <div class="swiper-slide">
+          <div class="slide_box">
+              <div class="slide_img_box">
+                  <img src="./img/products/${item_list[i].src}" alt="">
+              </div>
+              <div class="slide_title">${item_list[i].title}</div>
+              <div class="slide_sub">${item_list[i].section}</div>
+              <div class="slide_price">${item_list[i].price}</div>
+          </div>
+        </div>
+    `};
+
+
     </script>
 </body>
 <script src="./script.js"></script>
