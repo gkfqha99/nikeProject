@@ -544,6 +544,30 @@ body{
     padding: 10px;
 }
 
+.pics_box4{
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: skyblue; */
+    gap: 15px;
+}
+
+.pics_box4 div{
+    width: 49%;
+    height: auto;
+    /* background-color: pink; */
+}
+
+.pics_box4 div img{
+    width: 100%;
+    height: auto;
+}
+
+
 .border_gray1{
     width: 100%;
     border: 1px solid rgb(213, 213, 213);
