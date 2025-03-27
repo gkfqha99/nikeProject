@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  const item_list = [
+    {item_no:1, section:'여성신발', src:'dunk (1).png', title:'덩크로우 핑크', price:'134,000원', color:'1개의 색상',},
+    {item_no:2, section:'여성신발', src:'dunk (2).png', title:'덩크로우 검노', price:'112,000원', color:'1개의 색상',},
+    {item_no:3, section:'여성신발', src:'dunk (3).png', title:'덩크로우 그레이', price:'134,000원', color:'1개의 색상',},
+    {item_no:4, section:'남성신발', src:'dunk (4).png', title:'덩크로우 와인', price:'123,000원', color:'1개의 색상',},
+    {item_no:5, section:'여성신발', src:'dunk (5).png', title:'덩크로우 바닐라', price:'122,000원', color:'1개의 색상',},
+    {item_no:6, section:'여성신발', src:'dunk (6).png', title:'덩크로우 범고래', price:'141,000원', color:'1개의 색상',},
+    {item_no:7, section:'여성신발', src:'dunk (7).png', title:'덩크로우 카키', price:'121,000원', color:'1개의 색상',},
+    {item_no:8, section:'남성신발', src:'dunk (8).png', title:'덩크로우 회핑', price:'132,000원', color:'1개의 색상',},
+    {item_no:9, section:'여성신발', src:'dunk (9).png', title:'덩크로우 빨노주', price:'143,000원', color:'1개의 색상',},
+    {item_no:10, section:'남성신발', src:'dunk (10).png', title:'덩크로우 흰하', price:'111,000원', color:'1개의 색상',},
+    {item_no:11, section:'여성신발', src:'dunk (11).png', title:'덩크로우 머스타드', price:'123,000원', color:'1개의 색상',},
+    {item_no:12, section:'남성신발', src:'dunk (12).png', title:'덩크로우 오렌지', price:'132,000원', color:'1개의 색상',},
+    {item_no:13, section:'남성신발', src:'dunk (13).png', title:'덩크로우 검주', price:'142,000원', color:'1개의 색상',},
+    {item_no:14, section:'남성신발', src:'dunk (14).png', title:'덩크로우 에메랄드', price:'112,000원', color:'1개의 색상',},
+    {item_no:15, section:'남성신발', src:'dunk (15).png', title:'덩크로우 군화', price:'132,000원', color:'1개의 색상',},
+    {item_no:16, section:'남성신발', src:'dunk (16).png', title:'덩크로우 발렌타인', price:'123,000원', color:'1개의 색상',},
+    {item_no:17, section:'여성신발', src:'dunk (17).png', title:'덩크로우 생노', price:'143,000원', color:'1개의 색상',},
+    {item_no:18, section:'남성신발', src:'dunk (18).png', title:'덩크로우 된장', price:'121,000원', color:'1개의 색상',},
+    {item_no:19, section:'남성신발', src:'dunk (19).png', title:'덩크로우 화이트크림', price:'112,000원', color:'1개의 색상',},
+    {item_no:20, section:'여성신발', src:'dunk (20).png', title:'덩크로우 파스텔', price:'132,000원', color:'1개의 색상',},
+    {item_no:21, section:'여성신발', src:'dunk (21).png', title:'덩크로우 누끼', price:'142,000원', color:'1개의 색상',},
+];
+
   let top_banner = document.getElementsByClassName("top_banner")[0]; //top_banner 요소 선택
   let top_banner_cover = document.getElementsByClassName("top_banner_cover")[0];
 
@@ -80,6 +105,34 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  //디테일 페이지 url찾아서 ?를 기준으로 스플릿해서 배열번호 가져오기.
+  function get_url_info() {
+    let url = location.href; // /detail.html?itemNo=1
+    url = url.split("?");// [detail.html , itemNo=1]
+    if(url.length > 1) { 
+        url = url[1].split("=");//[itemNo , 1]
+    return url[1];
+    }
+} 
+
+  //get_url_info 로 가져온 배열q번호
+let idx = get_url_info();
+        console.log("itemNo: ",idx)
+        let item = item_list[idx -1];
+
+        document.getElementsByClassName('main_pic_box')[0].innerHTML = `
+          <div class="gpa"><span>★ 평점 높음</span></div>  
+            <div class="main_pic">
+                <img src="././img/products/${item.src}" alt="">
+            </div>
+            `
+
+        document.getElementsByClassName('change_sec')[0].innerHTML = `
+          <div class="subs_box_title">${item.title}</div>
+          <div class="subs_box_section">${item.section}</div>
+          <div class="subs_box_price">${item.price}</div>
+        `
 });
 
 window.addEventListener("scroll", function () {
