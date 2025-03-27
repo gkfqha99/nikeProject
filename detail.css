@@ -659,7 +659,7 @@ body{
     justify-content: center;
 }
 
-.border_gray{
+.border_gray1{
     width: 100%;
     border: 1px solid rgb(213, 213, 213);
     margin:100px 0px;
@@ -698,4 +698,40 @@ body{
 
 .korea{
     color: gray;
+}
+
+.inc{
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+}
+
+.border_gray{
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.footer_box{
+    display: flex;
+    /* background-color: pink; */
+    width: 100%;
+    /* margin: 0 auto; */
+    gap: 30px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.footer_box > div{
+    /* background-color: skyblue; */
+    width: calc( 100% / 2);
+    margin: 50px 0px;
+    color: rgb(179, 179, 179);
+}
+
+.under_line{
+    text-decoration: underline;
 }
