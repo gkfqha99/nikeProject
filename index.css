@@ -556,19 +556,70 @@ body{
     gap: 15px;
 }
 
-.pics_box4 div{
+.pic{
     width: 49%;
     height: auto;
     position: relative;
     /* background-color: pink; */
 }
 
-.pics_box4 div img{
+.pic img{
     width: 100%;
     height: auto;
 }
 
-.pic1_div_box{
+.pic_ab{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: right;
+    justify-content: center;
+    margin-left: 50px;
+    bottom: 20px;
+    left: 0px;
+    width: 40%;
+    height: 150px;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+
+.pic_ab div{
+    color: white;
+    font-size: 25px;
+}
+
+.pic_ab input{
+    width:50%;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pic_ab input:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.black_font div{
+    color: black;
+}
+
+.black_font input{
+    background-color: black;
+    color: white;
+}
+
+.black_font input:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .border_gray1{
