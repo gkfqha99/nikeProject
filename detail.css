@@ -328,7 +328,7 @@ body{
     width: 55%;
     height: 100vh;
     /* background-color: #F6F6F6; */
-    /* background-color: orange; */
+    /* background-color: purple; */
     position: relative;
 }
 
@@ -337,8 +337,12 @@ body{
     height: 10%;
     /* background-color: pink; */
     line-height: 75px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 20px;
 }
 
 .gpa span{
@@ -352,9 +356,10 @@ body{
 .main_pic{
     height: 80%;
     width: 90%;
-    /* background-color: orange; */
+    background-color: orange;
     position: relative;
     overflow: hidden;
+    top: 50px;
 }
 
 .main_pic img{
@@ -394,7 +399,7 @@ body{
     width: 45%;
     height: auto;
     position: relative;
-    top: 60px;
+    top: 30px;
     /* overflow: auto; */
     /* background-color: gray; */
 }
@@ -580,7 +585,7 @@ body{
 }
 
 .more_style_box{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .more_style{
