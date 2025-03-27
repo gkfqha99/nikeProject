@@ -1,5 +1,5 @@
 body{
-    background-color: #F5F5F5;
+    background-color: white;
     height: auto;
 }
 
@@ -296,7 +296,7 @@ body{
     margin: 0 auto;
     width: 70%;
     height: auto;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     display: flex;
     /* justify-content: space-between; */
     gap: 15px;
@@ -305,7 +305,7 @@ body{
 .small_pics_box{
     width: 9%;
     height: 100vh;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -322,14 +322,14 @@ body{
     width: 55%;
     height: 100vh;
     /* background-color: #F6F6F6; */
-    background-color: orange;
+    /* background-color: orange; */
     position: relative;
 }
 
 .gpa{
     width: 100%;
     height: 10%;
-    background-color: pink;
+    /* background-color: pink; */
     line-height: 75px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -345,8 +345,8 @@ body{
 
 .main_pic{
     height: 80%;
-    width: 100%;
-    background-color: orange;
+    width: 90%;
+    /* background-color: orange; */
     position: relative;
     overflow: hidden;
 }
@@ -387,12 +387,18 @@ body{
 .subs_box{
     width: 45%;
     height: auto;
+    position: relative;
+    top: 60px;
     /* overflow: auto; */
     /* background-color: gray; */
 }
 
 .subs_box::-webkit-scrollbar {
     display: none; /* 스크롤바 숨기기 */
+}
+
+.change_sec{
+    margin-top: 20px;
 }
 
 .subs_box_title{
@@ -413,7 +419,7 @@ body{
 .size_box{
     width: 100%;
     height: 25px;
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -421,17 +427,18 @@ body{
 
 .size_sel{
     min-width: 30%;
-    background-color: orange;
+    /* background-color: orange; */
     font-weight: 600;
 }
 
 .size_guide_box{
     width: 70%;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     justify-content: right;
     gap: 3px;
+    margin-right: 20px;
 }
 
 .size_pic{
@@ -444,7 +451,7 @@ body{
 .size_guide{
     width:100px;
     height: 100%;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .size_boxes{
@@ -549,7 +556,6 @@ body{
 .acodian_box_sub{
     margin-top: 20px;
     margin-right: 20px;
-    background-color: red;
     height: 0px;
     overflow: hidden;
     transition: all 0.5s;
@@ -685,11 +691,17 @@ body{
 }
 
 .main_bot_list{
-    width: 70%;
+    width: 80%;
     height: 100%;
     /* background-color: orange; */
     display: flex;
-    gap: 22%;
+    gap: 50px;
+}
+
+.bot_list{
+    width: calc(100% / 4);
+    height: auto;
+    /* background-color: skyblue; */
 }
 
 .bot_list ul li:nth-child(1){
