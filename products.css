@@ -524,6 +524,10 @@ body{
     font-weight: 500;
 }
 
+.bot_list ul li:hover{
+    color: black;
+}
+
 .korea{
     color: gray;
 }
