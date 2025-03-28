@@ -622,6 +622,90 @@ body{
     box-sizing: border-box;
 }
 
+.pic_ab .font_small{
+    font-size: 20px;
+}
+
+.Trending_Now_box{
+    width: 100%;
+    height: 630px;
+    background-color: pink;
+    margin-top: 80px;
+}
+
+.Trending_Now{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: aquamarine;
+    padding-bottom: 30px;
+}
+
+.Trending_Now_picBox{
+    width: 100%;
+    height: 550px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Trending_pic{
+    width: calc((100% - (15px * 2)) / 3);
+    height: 100%;
+    background-color: green;
+    position: relative;
+    overflow: hidden;
+}
+
+.Trending_pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.Trending_pic_ab{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 5px;
+}
+
+.Trending_pic_ab div{
+    color: white;
+    /* background-color: pink; */
+    width: 100%;
+    height: 30%;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.Trending_pic_ab a{
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.Trending_pic_ab a:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
 .border_gray1{
     width: 100%;
     border: 1px solid rgb(213, 213, 213);
@@ -702,3 +786,4 @@ body{
 .under_line{
     text-decoration: underline;
 }
+
