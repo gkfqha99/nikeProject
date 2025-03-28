@@ -405,7 +405,7 @@ body{
 }
 
 .chk_box{
-    height: auto;
+    height: 0;
     width: 100%;
     overflow: hidden;
     transition: all 0.7s;
