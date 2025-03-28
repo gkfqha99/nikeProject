@@ -629,7 +629,7 @@ body{
 .Trending_Now_box{
     width: 100%;
     height: 630px;
-    background-color: pink;
+    /* background-color: pink; */
     margin-top: 80px;
 }
 
@@ -637,14 +637,14 @@ body{
     width: 100%;
     font-size: 30px;
     font-weight: 500;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding-bottom: 30px;
 }
 
 .Trending_Now_picBox{
     width: 100%;
     height: 550px;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
