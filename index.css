@@ -316,12 +316,10 @@ body{
 
 /********************************/
 .banner_pics_box{
-    width: 100%;
-    height: 550px;
-    /* display: flex; */
+    width: auto;
+    height: auto;
     overflow: hidden;
     margin: 20px 0px;
-    margin-top: 50px;
 }
 
 .swiper1 {
@@ -330,6 +328,8 @@ body{
   }
 
   .swiper1 .swiper-slide {
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -342,7 +342,7 @@ body{
     display: block;
     width:100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .swiper.swiper1  {
@@ -363,7 +363,6 @@ body{
   }
 /*********************************/
 .main_text_box{
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,7 +398,7 @@ body{
 
 .nike_iframe{
     margin: 30px 0px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
 }
 
 .infinite_space_box{
