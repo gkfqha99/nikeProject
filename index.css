@@ -623,7 +623,9 @@ body{
 }
 
 .pic_ab .font_small{
-    font-size: 20px;
+    font-size: 23px;
+    padding-bottom: 2px;
+    margin-top: 10px;
 }
 
 .Trending_Now_box{
@@ -740,6 +742,83 @@ body{
     width: auto;
     height: 300px;
 }
+
+.nike_membership_sec{
+    width: auto;
+    height: auto;
+    /* background-color: pink; */
+}
+
+.nike_mambership_box{
+    width: 100%;
+    padding: 0px 70px;
+    box-sizing: border-box;
+    height: 60px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nike_mambership{
+    font-size: 27px;
+}
+
+.join_nike_mambership:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+.nike_mambership_sub_box{
+    width: auto;
+    height: auto;
+    margin: 0px 50px;
+    overflow: auto;
+    display: flex;
+    gap: 10px;
+    /* background-color: skyblue; */
+}
+
+.nike_mambership_pics_box{
+    width: auto;
+    height: auto;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.nike_mambership_pics_box img{
+    width: 500px;
+    height: auto;
+}
+
+.member_div2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.nike_mambership_pics_box a{
+    background-color: black;
+    color: white;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+}
+
+.nike_mambership_pics_box a:hover{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
 /************footer zone************/
 
 .border_gray1{
