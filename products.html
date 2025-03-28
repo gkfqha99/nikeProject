@@ -501,9 +501,11 @@
                                     </div>
                                 </a>
                             </div>
+                            <button id="load_more" value="더보기"></button>
                          `;-->
                     </div>
                 </div>
+                <button id="load_more" value="더보기">더보기</button>
             </div>
         </div>
         <div class="footer">
@@ -669,10 +671,42 @@
 
     //외부 js파일인 item_list.js 파일의 배열을 이용하여 , main_box_items 안의 html을
     //반복문으로 꾸며줌. 내부의 각 div에는 item_list.js안의 객체요소 들어감. 
-    let main_box_items = document.getElementsByClassName('main_box_items')[0];
+    // let main_box_items = document.getElementsByClassName('main_box_items')[0];
 
-    for(let i=0; i<item_list.length; i++) {
-        main_box_items.innerHTML += `
+    // for(let i=0; i<item_list.length; i++) {
+    //     main_box_items.innerHTML += `
+    //         <div class="main_box_item">
+    //             <a href="./detail.html?itemNo=${item_list[i].item_no}">
+    //                 <div class="img_box">
+    //                     <img src="./img/products/${item_list[i].src}" alt="">
+    //                 </div>
+    //                 <div class="subs_box">
+    //                     <div class="item_no">${item_list[i].item_no}</div>
+    //                     <div class="subs_box_title">${item_list[i].title}</div>
+    //                     <div class="subs_box_section">${item_list[i].section}<div>
+    //                     <div class="subs_box_color">${item_list[i].color}</div>
+    //                     <div class="subs_box_price">
+    //                         ${(item_list[i].price).toLocaleString('ko')}
+    //                     </div>
+    //                 </div>
+    //             </a>
+    //         </div> 
+    //     `;
+    // } 
+
+/*위에 주석달린 소스에서 처음에 6개의 객체만 나오게하고 , 버튼 클릭할때마다 6개씩 추가되게하는
+소스 추가함. */
+let main_box_items = document.getElementsByClassName("main_box_items")[0];
+let load_more = document.getElementById("load_more");
+
+let currentIndex = 0;
+let itemPerLoad = 6;
+
+function itemLoad() {
+  const endIndex = currentIndex + itemPerLoad;
+
+  for (let i = currentIndex; i < item_list.length && i < endIndex; i++) {
+    main_box_items.innerHTML += `
             <div class="main_box_item">
                 <a href="./detail.html?itemNo=${item_list[i].item_no}">
                     <div class="img_box">
@@ -681,15 +715,35 @@
                     <div class="subs_box">
                         <div class="item_no">${item_list[i].item_no}</div>
                         <div class="subs_box_title">${item_list[i].title}</div>
-                        <div class="subs_box_section">${item_list[i].section}<div>
+                        <div class="subs_box_section">${
+                          item_list[i].section
+                        }<div>
                         <div class="subs_box_color">${item_list[i].color}</div>
                         <div class="subs_box_price">
-                            ${(item_list[i].price).toLocaleString('ko')}
+                            ${item_list[i].price.toLocaleString("ko")}
                         </div>
                     </div>
                 </a>
             </div> 
         `;
-    }
+  }
+
+  currentIndex += itemPerLoad; /*여기서 for문이 끝나면서 다시 아무값도 없어진 currentIndex에
+   itemPerLoad가 가지고있는 6을 넘겨줘서 , load_more버튼을 눌러서  itemLoad()함수가 다시호출될땐
+   currentIndex가 6부터 시작된다. 즉 , for문에 i가 currentIndex 이므로 i도 6부터 시작해서 
+   endIndex 와 item_list.length 보다 작을때 까지 반복된다. 첫번째 호출때 endIndex는 6이지만
+   매번 호출될때마다 currentIndex가 6씩 증가하므로 endIndex는 항상 currentIndex보다 6높은상태가
+   된다. 즉, load_more 버튼을 누를때마다 6개의 객체가 보여지게 된다.*/
+
+  if (currentIndex < item_list.length) {
+    load_more.style.display = "block";
+  } else {
+    load_more.style.display = "none";
+  }
+}
+
+itemLoad()
+
+load_more.addEventListener('click', itemLoad);
 </script>
 </html>
