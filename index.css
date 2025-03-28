@@ -321,6 +321,7 @@ body{
     /* display: flex; */
     overflow: hidden;
     margin: 20px 0px;
+    margin-top: 50px;
 }
 
 .swiper1 {
