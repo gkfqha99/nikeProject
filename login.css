@@ -167,3 +167,25 @@ form{
 .custom_box:hover{
     background-color: black;
 } */
+
+/* 아이디 찾기, 비번 찾기 */
+.just_box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+   
+}
+.find_info{
+    display: flex;
+   align-items: center;
+   gap: 10px;
+   color: gray;
+   
+}
+.bar{
+    width: 1px;
+    height: 16px;
+    background-color: grey;
+}
