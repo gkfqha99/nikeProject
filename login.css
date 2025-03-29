@@ -67,3 +67,103 @@ a{
 .btn_box {
     text-align: center;
 }
+/* 아이디&비밀번호 Form tag */
+
+form{
+    margin-top: 30px;
+}
+.id_word{
+    color: gray;
+
+}
+.id_psw{
+    color: gray;
+}
+.id_box{
+    margin-bottom: 20px;
+}
+#uid{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: lightgray;
+    font-size: 20px;
+    padding-left: 10px;
+}
+#psw{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: lightgray;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.submit_btn_box{
+    display: flex;
+    justify-content: center;
+}
+.submit_btn{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    margin-top: 100px;
+}
+/* 아이디 저장 */
+.cus_lable{
+    position: absolute;
+    top:580px;
+    left: 33%;
+
+}
+.custom_radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#id_store {
+    display: none;
+}
+
+.custom_box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    position: relative;
+    margin-right: 8px; /* 텍스트와의 간격을 위해 추가 */
+}
+
+.rectangle {
+    width: 16px;
+    height: 6px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: none;
+}
+
+.label_text {
+    margin-left: 8px; /* 텍스트와의 간격을 위해 추가 */
+    font-size: 18px;
+}
+/* .custom_box:hover .rectangle {
+    display: block;
+    border-color: #fff;
+}
+.custom_box:hover{
+    background-color: black;
+} */
