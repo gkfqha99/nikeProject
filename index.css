@@ -590,10 +590,12 @@ body{
     font-size: 25px;
 }
 
-.pic_ab input{
-    width:50%;
+.pic_ab a{
+    width:100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
     background-color: white;
-    border: none;
     color: black;
     border-radius: 40px;
     padding: 10px;
@@ -601,18 +603,17 @@ body{
     cursor: pointer;
 }
 
-.pic_ab input:hover{
+
+.pic_ab a:hover{
     background-color: gray;
     color: white;
-    /* border: 1px solid white; */
-    box-sizing: border-box;
 }
 
 .black_font div{
     color: black;
 }
 
-.black_font input{
+.black_font a{
     background-color: black;
     color: white;
 }
