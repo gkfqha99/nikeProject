@@ -163,3 +163,75 @@ header{
     padding-left: 10px;
     margin-bottom: 20px;
 }
+
+.document{
+    width: 100%;
+    border: 1px solid;
+}
+.docu_1_box{
+    border-bottom: 1px solid;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.db{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.db_1_desc{
+    padding-left: 20px;
+    padding-top: 10px;
+    color: gray;
+}
+.chk_box{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.chk_mark{
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+.chk_mark.active {
+    transform: rotateX(180deg);
+}
+.chk_box > input{
+   margin-left:20px ;
+}
+
+
+/* chk_box 안에 regulation explanation */
+
+.docu_regulation{
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    overflow: hidden;   
+    transition: all 0.5s;
+   
+}
+.frist{
+  margin: 50px 50px;
+
+}
+.second{
+    margin: 20px 50px;
+}
+.thrid{
+    margin: 20px 50px;
+}
+.docu_regulation.active {
+    height: 300px;
+    overflow-y: auto;
+}
+.submit_btn{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
