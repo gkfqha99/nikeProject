@@ -53,3 +53,113 @@ header{
 
     position: fixed;
 }
+
+.logo_img{
+    width: 200px;
+    height: 180px;
+    position: fixed;
+
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.head_desc{
+    margin: 150px auto 50px auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700px;
+}
+
+ /*  main  */
+ .id_msg{
+   
+    color: red;
+    width: 100%;
+    height: 20px;
+   
+    font-size: 0;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-left: 3px;
+    
+ }
+ #uid{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+ }
+ main{
+    margin-top: 200px;
+ }
+ .i_type1{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 20px;
+ }
+
+ .indivi_mem{
+    color: gray;
+ }
+
+ .info_desc{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+ }
+ .info_2{
+    font-size: 14px;
+ }
+ 
+ input::placeholder{
+    color: lightgray;
+ }
+ .tele{
+    width:100%;
+    display: flex;
+    line-height: 40px;
+    gap: 10px;
+ }
+.tele > * {
+    width: calc(100% / 3);
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+ .agreement{
+    margin-top: 50px;
+    color: gray;
+ }
+ .agree_desc{
+    margin: 10px 0px 10px 5px;
+    font-size: 15px;
+ }
+ .extra{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 50px;
+ }
+ .birth_radio{
+    margin-bottom: 10px;
+   
+ }
+ .birthday{
+    width: 100%;
+    display: flex;
+    line-height: 40px;
+    gap: 10px;
+ }
+ .birthday > * {
+    width: calc(100% / 3);
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
