@@ -235,9 +235,9 @@ body{
     color: gray;
 }
 
-.span_txt{
+.N_m_w_ul li:nth-child(1){
     font-size: 15px;
-    margin: 10px 10px;
+    color: black;
 }
 
 .snkrs{
