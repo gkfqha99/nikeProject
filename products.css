@@ -235,6 +235,11 @@ body{
     color: gray;
 }
 
+.N_m_w_ul li:nth-child(1){
+    font-size: 15px;
+    color: black;
+}
+
 .span_txt{
     font-size: 15px;
     margin: 10px 10px;
